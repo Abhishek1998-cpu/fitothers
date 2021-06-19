@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './Home.dart';
+import '../Home.dart';
 import 'dart:async';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 1),
+      Duration(seconds: 2),
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -46,9 +46,10 @@ class _SplashScreenState extends State<SplashScreen> {
                 "Welcome to",
                 style: GoogleFonts.dancingScript(
                   textStyle: TextStyle(
-                      color: Colors.black87,
-                      fontSize: 30,
-                      fontWeight: FontWeight.w900),
+                    color: Colors.black87,
+                    fontSize: 30,
+                    fontWeight: FontWeight.w900,
+                  ),
                 ),
               ),
             ),
